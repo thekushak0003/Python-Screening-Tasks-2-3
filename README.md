@@ -60,8 +60,7 @@ Both tasks meet ALL requirements from the original PDFs:
 ## 🔗 Contact Information
 
 For any questions about this submission:
-- Email: [Your Email]
-- Repository: [GitHub Repository Link]
+- Email: [abhay.20230003@mnnit.ac.in]
 
 ---
 
