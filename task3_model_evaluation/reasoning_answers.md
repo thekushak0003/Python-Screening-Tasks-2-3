@@ -91,3 +91,38 @@ The **accuracy-interpretability-cost triangle** presents fundamental tensions in
 
 **Contextual Optimization:** Different educational contexts may require different trade-off decisions:
 - **Research institutions** might prioritize accuracy and accept higher costs
+- **Community colleges** might prioritize cost-effectiveness and interpretability
+- **K-12 schools** might need maximum interpretability for educator oversight
+
+**Risk Management Through Trade-off Awareness**
+
+**Accuracy Risks:** Lower accuracy models may provide incorrect analysis or inappropriate educational guidance, potentially reinforcing student misconceptions or missing critical learning opportunities.
+
+**Interpretability Risks:** Black box models may generate pedagogically inappropriate responses that educators cannot predict or prevent, potentially undermining educational objectives or student confidence.
+
+**Cost Risks:** Unsustainable cost structures may force institutions to abandon AI-assisted education after initial pilots, while under-investment in computational resources may result in poor user experiences that damage adoption.
+
+**The Optimal Balance for Educational AI**
+
+Based on comprehensive analysis, the optimal balance for educational applications involves:
+- **Moderate-high accuracy** (85-90%) rather than maximum accuracy
+- **Moderate interpretability** through hybrid architectures
+- **Low-moderate cost** through open source deployment with institutional investment
+
+This balance ensures educational effectiveness while maintaining practical sustainability for institutional deployment. The key insight is that educational AI systems optimize for learning outcomes, not just technical performance, requiring different trade-off calculations than production software systems.
+
+## Why did you choose CodeT5+ and what are its strengths/limitations?
+
+**Strategic Selection Rationale**
+
+I selected CodeT5+ as the primary evaluation target because it uniquely addresses the competing demands of educational AI deployment while specifically meeting the requirements of student competence analysis. Unlike general-purpose language models that treat code as text, CodeT5+ was purpose-built for code understanding tasks, making it inherently more suitable for analyzing student Python submissions and generating educationally appropriate responses.
+
+**Decision Framework:** My selection process evaluated models across four critical dimensions: technical capability for code analysis, educational applicability for learning scenarios, practical feasibility for institutional deployment, and long-term sustainability for ongoing educational use. CodeT5+ emerged as the only model that scored highly across all dimensions while maintaining the flexibility needed for educational customization.
+
+**Key Strengths Analysis**
+
+**1. Code-Native Understanding Architecture**
+CodeT5+ was pre-trained on 8.35 million GitHub repositories paired with natural language documentation, enabling it to understand both what code does and why it might be written in specific ways. This dual understanding is crucial for educational applications where explaining the reasoning behind coding patterns is as important as identifying errors. The model's encoder-decoder architecture allows it to both analyze existing code (encoding) and generate educational explanations (decoding) within a single framework.
+
+**2. Educational Scalability and Accessibility**
+The availability of multiple model sizes (220M to 16B parameters) allows institutions to select based on their computational resources and performance requirements. A community college can deploy the 770M model on modest hardware, while a research university can utilize the 16B model for maximum capability
